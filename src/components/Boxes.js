@@ -31,6 +31,9 @@ export default function Boxes() {
         <Grid item xs={3}>
           <Item onclick={cb1} heading={"Hoverable-5"} ourClass={"button-69"} />
         </Grid>
+        <Grid item xs={3}>
+          <div>A button</div>
+        </Grid>
       </Grid>
     </div>
   );
