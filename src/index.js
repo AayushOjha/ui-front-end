@@ -6,6 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import { render } from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import TestPage from "./components/TestPage";
+import IFrame from "./components/IFrame";
 
 const rootElement = document.getElementById("root");
 render(
@@ -14,6 +15,7 @@ render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/test" element={<TestPage />} />
+        <Route path="/iframe" element={<IFrame />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,

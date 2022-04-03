@@ -1,8 +1,15 @@
 import React from "react";
 import Button from "./Button";
+import IFrames from "./IFrame";
 
 export default function TestPage() {
-  let pass = `{"color": "white","backgroundColor": "DodgerBlue", "padding": "10px", "fontFamily": "Arial", "&:hover": {"backgroundColor": "red"}}`;
-  pass = JSON.parse(pass);
-  return <div>{<Button text="A button" css={pass}></Button>}</div>;
+  return (
+    <div>
+      <IFrames
+        html="<h1> Ayush </h1>"
+        css="h1{color:tomato}"
+        js="console.log('beDev')"
+      />
+    </div>
+  );
 }
